@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #fff8f5;
+  color: #36312e;
+}
+
+h1, h2, h3 {
+  font-family: Manrope, sans-serif;
+}
+
+/* Layout */
+.shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 32px 16px;
+}
+
+.shell.dashboard {
+  display: block;
+  padding: 48px 32px 64px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Card Component */
+.card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(185, 176, 172, 0.18);
+  box-shadow: 0 20px 60px -30px rgba(54, 49, 46, 0.35);
+  border-radius: 24px;
+  padding: 32px;
+  backdrop-filter: blur(18px);
+}
+
+/* Typography */
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 11px;
+  color: #645e5a;
+}
+
+.title {
+  margin: 12px 0 8px;
+  font-size: 40px;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.dashboard .title {
+  margin: 10px 0 0;
+  font-size: 48px;
+}
+
+.subtle {
+  margin: 0;
+  color: #645e5a;
+  font-size: 14px;
+}
+
+/* Form Elements */
+.field {
+  margin-top: 18px;
+}
+
+.label {
+  display: block;
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #645e5a;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid rgba(185, 176, 172, 0.45);
+  background: #faf2ef;
+  color: #36312e;
+  font-size: 14px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #6a5c51;
+  box-shadow: 0 0 0 3px rgba(106, 92, 81, 0.12);
+}
+
+/* Buttons */
+.button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px 16px;
+  border: 0;
+  border-radius: 16px;
+  background: #6a5c51;
+  color: #fff6f2;
+  font-family: Manrope, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: 0.95;
+}
+
+/* Alert Message */
+.alert {
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: #fde2b3;
+  color: #63512d;
+  font-size: 14px;
+}
+
+/* Links */
+.link {
+  display: block;
+  margin-top: 18px;
+  text-align: center;
+  font-size: 12px;
+  color: #645e5a;
+}
+
+/* Dashboard Styles */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.signout {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: #6a5c51;
+  border-bottom: 1px solid #6a5c51;
+  padding-bottom: 4px;
+}
+
+.panel {
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(185, 176, 172, 0.18);
+  box-shadow: 0 20px 60px -30px rgba(54, 49, 46, 0.35);
+  border-radius: 24px;
+  padding: 24px;
+  backdrop-filter: blur(18px);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px 12px;
+  vertical-align: middle;
+}
+
+thead th {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: #645e5a;
+  border-bottom: 1px solid rgba(185, 176, 172, 0.2);
+}
+
+tbody tr + tr td {
+  border-top: 1px solid rgba(185, 176, 172, 0.12);
+}
+
+.name {
+  font-weight: 600;
+}
+
+.status {
+  color: #645e5a;
+}
+
+/* Action Buttons */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.action {
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+}
+
+.verify {
+  background: #ece0da;
+  color: #625a55;
+}
+
+.delete {
+  background: #fde2b3;
+  color: #63512d;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.85);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 9999;
+}
+
+.popup.active {
+    display: block;
+}

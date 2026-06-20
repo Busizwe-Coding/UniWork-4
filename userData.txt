@@ -1,0 +1,9 @@
+INSERT INTO tblUser (fullName, email, username, password) VALUES
+('Peter Parker','p.parker@dailybugle.co.za','spiderman','cc03e747a6afbbcbf8be7668acfebee5'),
+('Bruce Wayne','b.wayne@wayneenterprises.co.za','batman','cc03e747a6afbbcbf8be7668acfebee5'),
+('Clark Kent','c.kent@dailyplanet.co.za','superman','cc03e747a6afbbcbf8be7668acfebee5'),
+('Diana Prince','d.prince@themiscira.co.za','wonderwoman','cc03e747a6afbbcbf8be7668acfebee5'),
+('Tony Stark','t.stark@starkindustries.co.za','ironman','cc03e747a6afbbcbf8be7668acfebee5');
+
+INSERT INTO tblAdmin (username, password) VALUES
+('admin','cc03e747a6afbbcbf8be7668acfebee5');
